@@ -1,0 +1,29 @@
+# System Monitoring Configuration
+
+# Thresholds (in percentage)
+thresholds:
+  cpu: 85.0
+  ram: 85.0
+  disk: 90.0
+  process: 50.0
+
+# Monitoring settings
+monitoring:
+  update_interval: 3  # seconds
+  history_size: 100   # number of data points to keep
+  top_processes: 5    # number of top processes to show
+
+# Logging settings
+logging:
+  file: "monito.log"
+  level: "INFO"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# UI settings
+ui:
+  theme: "default"
+  refresh_rate: 1     # seconds
+  show_ascii_art: true
+  show_network: true
+  show_processes: true 
